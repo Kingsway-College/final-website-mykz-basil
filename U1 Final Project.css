@@ -1,0 +1,56 @@
+div{
+    text-align: center;
+    font-family: "DynaPuff", serif;
+    background-color: #44522Dff;
+    margin: 0px;
+    padding: 0px;
+    color: var(--moss-green);
+    position: sticky; 
+}
+
+head{
+    font-family: "DynaPuff", serif;
+    text-align: center;
+    background-color: #869EAAff;
+    margin: 0px;
+    padding: 0px;
+    height: 500svh;
+}
+  
+h1{
+    text-align: center;
+    font-family: "DynaPuff",serif;
+    margin: 0px;
+    padding: 0px;
+}
+:root{
+    --light-blue: #A5C6C8ff;
+--cadet-gray: #869EAAff;
+--seasalt: #F6F7F6ff;
+--moss-green: #97A678ff;
+--dark-moss-green: #44522Dff;
+}
+body{
+    background-color: var(--light-blue);
+}
+
+a:hover{
+    color: var(--dark-moss-green);
+}
+#box{
+    display:flex
+}
+#rectangle{
+    display:flex
+}
+a:active{
+    color: var(--dark-moss-green);
+}
+a{
+    color: var(--moss-green);
+    text-decoration: none;
+}
+
+footer{
+    background-color: green;
+}
