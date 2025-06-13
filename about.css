@@ -1,0 +1,45 @@
+body{
+    font-family: "Orbitron", serif;
+   color: var(--cadet-gray);
+   background-color: var(--light-blue);
+   align-items: center;
+}
+:root{
+    --light-blue: #A5C6C8ff;
+    --cadet-gray: #869EAAff;
+    --seasalt: #F6F7F6ff;
+    --moss-green: #97A678ff;
+    --dark-moss-green: #44522Dff;
+}
+hr{
+    color: var(--dark-moss-green);
+}
+
+a:hover{
+    color: var(--seasalt);
+   
+}
+a:active{
+    color:var(--dark-moss-green)
+}
+a{
+    text-align: center;
+    color: var(--cadet-gray);
+    text-decoration: none;
+}
+ul{
+text-align: center;
+}
+
+h1{
+    text-align: center;
+}
+
+#box{
+    display: flex;
+}
+
+.box2{display:flex;}
+
+
+.box3{display:flex;}
