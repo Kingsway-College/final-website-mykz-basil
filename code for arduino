@@ -1,0 +1,49 @@
+//LiquidCrystal copied from ChatGpt
+#include <LiquidCrystal.h>
+LiquidCrystal lcd (2,11,8,9,12,7);
+
+int speedPin=5;
+int dir1=4;
+int dir2=3;
+int mSpeed;
+int jPin=A1;
+int jVal;
+int LED =13;
+
+ 
+void setup() {
+  // put your setup code here, to run once:
+pinMode(speedPin,OUTPUT);
+pinMode(dir1,OUTPUT);
+pinMode(dir2,OUTPUT);
+pinMode(jPin,INPUT);
+  pinMode(LED,OUTPUT);
+Serial.begin(9600);
+    lcd.begin(16, 2);             // Initialize a 16x2 LCD
+  lcd.print("Fan Controller");
+  lcd.setCursor(0, 1);
+  lcd.print("Grade 9 Project");
+ 
+}
+ 
+void loop() {
+  // put your main code here, to run repeatedly:
+jVal=analogRead(jPin);
+ 
+Serial.println(jVal);
+if (jVal<512){
+digitalWrite(dir1,LOW);
+digitalWrite(dir2,HIGH);
+mSpeed=-255./512.*jVal+255.;
+analogWrite(speedPin,mSpeed);
+  digitalWrite(LED,HIGH);
+  lcd.print("Fan On");
+}
+if(jVal>=512){
+digitalWrite(dir1,HIGH);
+digitalWrite(dir2,LOW);
+mSpeed=(255./512.)*jVal-255.;
+analogWrite(speedPin,mSpeed);
+}
+
+}
