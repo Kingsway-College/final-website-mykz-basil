@@ -34,3 +34,12 @@ text-align: center;
 h1{
     text-align: center;
 }
+
+#box{
+    display: flex;
+}
+
+.box2{display:flex;}
+
+
+.box3{display:flex;}

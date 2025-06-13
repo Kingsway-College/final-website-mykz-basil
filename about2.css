@@ -50,3 +50,8 @@ footer{
     margin: 0px;
     padding: 0px;
 }
+
+
+h3{ font-family: "Quicksand", serif;;
+    color:var(--dark-moss-green)
+}
